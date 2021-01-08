@@ -10,19 +10,8 @@ import psutil
 from selenium import webdriver
 
 
-"""
-To Do:
-	[*] if no cookies, wait for login
-		[*] save cookies
-		[*] wait for input...
-	[*] requirements
-	[ ] readme
-
-"""
-
 
 target_url = 'https://www.amazon.ca/Microsoft-RRT-00001-Xbox-Series-X/dp/B08H75RTZ8/'  # Xbox Series X
-
 
 
 
@@ -48,7 +37,7 @@ class XboxPurchasingAgent:
 
 
 	def refresh_and_try_buying(self):
-		wait_value = 20
+		wait_value = 20  # wait 20 seconds between checking the page
 
 		while True:
 			try:
@@ -95,7 +84,6 @@ class XboxPurchasingAgent:
 				except Exception as e:
 					# self.driver becomes disconnected from chrome window sometimes - kill old window and start new driver
 					print(e)
-					# kill related processes
 					self.kill_driver_processes()
 
 					self.run()
