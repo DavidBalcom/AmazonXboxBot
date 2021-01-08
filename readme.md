@@ -1,8 +1,11 @@
 
+# Amazon Bot for Xbox Series X (or PS5 or anything else...)
 
-Python 3 Script to automatically check Amazon for Xbox Series X stock every ~30 seconds and then order it when it shows up. This script could be used for any other product as well.
+Python 3 Script to automatically check Amazon for Xbox Series X stock every ~30 seconds and then order it when it shows up. This script could be used for any other product as well, including PS5. just change the `target_url` value. 
 
-### Requirements
+**Don't be an asshole and use this for scalping**
+
+## Requirements
 
 Requires chromedriver.exe matching your version of chrome, which can be downloaded here: https://chromedriver.chromium.org/home
 
@@ -12,7 +15,7 @@ requries `psutil` and `selenium` packages.
 
 run `py -m pip install -r requirements.txt` to install these packages
 
-### Usage
+## Usage
 
 When you run `python try_buying_xbox.py`, the script will open a Chrome window to amazon.ca. On first run, it will check for a `cookies.pkl` file and then ask you to login if no cookie file is found. Login to Amazon and press enter for the script to proceed. 
 

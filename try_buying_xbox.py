@@ -11,7 +11,7 @@ from selenium import webdriver
 
 
 
-target_url = 'https://www.amazon.ca/Microsoft-RRT-00001-Xbox-Series-X/dp/B08H75RTZ8/'  # Xbox Series X
+target_url = 'https://www.amazon.ca/Microsoft-RRT-00001-Xbox-Series-X/dp/B08H75RTZ8/'  # Xbox Series X... could be used for PS5 too
 
 
 
